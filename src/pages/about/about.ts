@@ -16,20 +16,40 @@ export class AboutPage {
   constructor(public navCtrl: NavController) {
 
   }
+
+  /**
+   * 设置
+   */
   goSetUp() {
   this.navCtrl.push(Setup);
   }
   goMySkill() {
   this.navCtrl.push(MySkill);
   }
+
+  /**
+   * 我的认证
+   */
   goMyCertificate() {
   this.navCtrl.push(MyCertificate);
    }
   goMyBill() {
     this.navCtrl.push(MyBill);
   }
+
+  /**
+   * 个人资料
+   */
   goMyDetail() {
     this.navCtrl.push(MyDetailPagePage);
   }
+
+  /**
+   * 问题反馈
+   */
+  goFeedback() {
+
+  }
+
 
 }
