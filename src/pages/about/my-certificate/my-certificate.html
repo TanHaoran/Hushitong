@@ -1,0 +1,52 @@
+<!--
+  Generated template for the MyCertificate page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>我的认证</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content >
+<ion-list>
+	<ion-item>
+		已有认证
+	</ion-item>
+	<ion-item>
+		<button ion-button color="danger" outline >实名认证</button>
+		<button ion-button color="danger" outline >护生认证</button>
+	</ion-item>
+</ion-list>
+<ion-list>
+	<ion-item>
+		添加认证 <p style="color: #999;display: inline-block;">(点击添加认证)</p>
+	</ion-item>
+	<ion-item no-lines>
+	<div>身份认证 </div>
+		<button ion-button color="danger" outline (click)="goAddCertificate()"  >实名认证</button>
+		<button ion-button color="danger" outline (click)="goAddCertificate()" >护生认证</button>
+	</ion-item>
+	<ion-item no-lines>
+	<div>职业认证 </div>
+	<p>执业证书</p>
+		<button ion-button color="danger" outline (click)="goAddCertificate()"  >执业护士</button>
+	</ion-item>
+	<ion-item no-lines>
+	<p>职称证书</p>
+		<button ion-button color="danger" outline (click)="goAddCertificate()"  >主任护师职业资格</button>
+		<button ion-button color="danger" outline (click)="goAddCertificate()"  >副主任护师职业资格</button>
+		
+	</ion-item>
+	<ion-item no-lines>
+		<button ion-button color="danger" outline (click)="goAddCertificate()"  >主管护师职业资格</button>
+		<button ion-button color="danger" outline (click)="goAddCertificate()"  >初级护师职业资格</button>
+	</ion-item>
+
+</ion-list>
+</ion-content>

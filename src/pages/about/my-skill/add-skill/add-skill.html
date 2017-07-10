@@ -1,0 +1,76 @@
+<!--
+  Generated template for the AddSkill page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+	<ion-navbar>
+		<ion-title>PICC专科护士</ion-title>
+	</ion-navbar>
+
+	<p>姓名填写后不可更改，系统将默认为您实名认证的姓名，请务必填写本人的真实姓名</p>
+
+</ion-header>
+
+
+<ion-content>
+<ion-list>
+
+	<ion-item>
+	<ion-icon name="contact" item-left color="gray"></ion-icon>
+		<ion-input type="text" placeholder="请输入姓名"></ion-input>
+	</ion-item>
+
+	<ion-item>
+		<ion-icon name="document" item-left color="gray"></ion-icon>
+		<ion-input type="text" placeholder="请填写您的证书编号"></ion-input>
+	</ion-item>
+	<ion-item no-lines>
+		上传证书照片
+
+	</ion-item>
+	<ion-item no-lines>
+				<p>①证书正面照片，须包含头像，姓名等真实信息</p>
+	</ion-item>
+	<ion-item no-lines>
+		<img src="assets/icon/2017-07-03 164344.jpg">
+	</ion-item>
+	<ion-item no-lines>
+		
+				<image-upload
+			[max]="100"
+			[url]="uploadurl"
+			[buttonCaption]="'上传图片'"
+			[dropBoxMessage]="'请选择执业证图片'"
+			(onFileUploadFinish)="imageUploaded($event)" ></image-upload>
+	</ion-item>
+	<ion-item no-lines>
+				<p>②证书编码页照片，证书编号必须清晰明确</p>
+	</ion-item>
+	<ion-item no-lines>
+	<img src="assets/icon/2017-07-03 164351.jpg">
+	</ion-item>	
+	<ion-item no-lines>
+		
+				<image-upload
+			[max]="100"
+			[url]="uploadurl"
+			[buttonCaption]="'上传图片'"
+			[dropBoxMessage]="'请选择执业证图片'"
+			(onFileUploadFinish)="imageUploaded($event)" ></image-upload>
+	</ion-item>	
+	<ion-item no-lines>
+		认证后可获得下列技能标签
+	</ion-item>
+	<ion-item no-lines>
+		<button ion-button color="gray" outline >PICC置管</button>
+		<button ion-button color="gray" outline>PICC维护</button>
+	</ion-item>
+</ion-list>
+</ion-content>
+
+<ion-footer>
+<button ion-button full>提交</button>
+</ion-footer>

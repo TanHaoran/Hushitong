@@ -1,0 +1,99 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>护士通</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content >
+  <ion-slides #mainSlide pager  loop="true" speed=5000 >
+
+    <ion-slide>
+      <img src="assets/icon/banner.png">
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/icon/banner.png">
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/icon/banner.png">
+    </ion-slide>
+
+  </ion-slides>
+
+  <ion-list>
+      <ion-item style="border-left: 3px solid #488aff">
+      <span item-start style="color: #488aff;">
+      公告
+      </span>
+      <ion-slides #noticeSlide  autoplay=1 loop="true" speed=3000 direction="vertical" style="height: 30px">
+
+        <ion-slide>
+          <p>关于不良事件上报要求的通知</p>
+        </ion-slide>
+
+        <ion-slide>
+        <p>关于下雨要收衣服的通知</p>
+        </ion-slide>
+
+        <ion-slide>
+          <p>关于召开深山会议的通知</p>
+        </ion-slide>
+
+      </ion-slides>
+      
+      <span item-end  (click)="goNotice()">更多</span>
+    </ion-item>
+    <ion-item (click)='goBlsj()'>
+      <ion-thumbnail item-start>
+        <img src="assets/icon/icon_blsj.png">
+      </ion-thumbnail>
+      <h2>不良事件</h2>
+      <p>1个未通过审核</p>
+<!--       <ion-badge item-end color="danger">2</ion-badge> -->
+      <span item-end style="font-size: 10px;color:#999">6月23日</span>
+    </ion-item>
+    <ion-item (click)='goNurseClass()'>
+      <ion-thumbnail item-start>
+        <img src="assets/icon/icon_hsxt.png">
+      </ion-thumbnail>
+      <h2>护士学堂</h2>
+      <p>你学习的一个课程获得了学分</p>
+      <span item-end style="font-size: 10px;color:#999">6月23日</span>
+    </ion-item>
+    <ion-item (click)="goScore()">
+      <ion-thumbnail item-start>
+        <img src="assets/icon/icon_xf.png">
+      </ion-thumbnail>
+      <h2>学分</h2>
+      <p>你有一个培训获得了学分</p>
+      <span item-end style="font-size: 10px;color:#999">15:42</span>
+    </ion-item>
+    <ion-item (click)="goContact()">
+      <ion-thumbnail item-start class="tab-red-point">
+        <img src="assets/icon/icon_fw.png" >
+<!--         <div class="redspot upright"></div> -->
+      </ion-thumbnail>
+      <h2>服务</h2>
+      <p>你有一个送药上门服务需要处理</p>
+      <span item-end style="font-size: 10px;color:#999">3:20</span>
+    </ion-item>
+<!--     <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/icon/dangan.jpg">
+      </ion-thumbnail>
+      <h2>工作通知</h2>
+      <p>[公告]护理部：关于召开深山会议的通知</p>
+      <ion-badge item-end color="danger">1</ion-badge>
+      <span item-end style="font-size: 10px;color:#999">12:44</span>
+    </ion-item> -->
+    <ion-item (click)="goChat()">
+      <ion-thumbnail item-start>
+        <img src="assets/icon/2017-05-13 212002.jpg">
+      </ion-thumbnail>
+      <h2>喵喵</h2>
+      <p>快来体验护护新功能</p>
+      <span item-end style="font-size: 10px;color:#999">6月25日</span>
+    </ion-item>    
+  </ion-list>
+</ion-content>

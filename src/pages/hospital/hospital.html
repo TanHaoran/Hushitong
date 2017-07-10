@@ -1,0 +1,48 @@
+<!--
+  Generated template for the Hospital page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>医院</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content >
+  <ion-list>
+    <ion-item (click)="goExam()">
+      <ion-thumbnail item-start>
+        <img src="assets/icon/kaoshi.jpg">
+      </ion-thumbnail>
+      <h2>考试</h2>
+      <p>护士资格考试成绩已公布</p>
+<!--       <button ion-button clear item-end >查看</button> -->
+    </ion-item>
+    <ion-item (click)="goScore()">
+    	<ion-thumbnail item-start>
+    		<img src="assets/icon/icon_xf.png">
+    	</ion-thumbnail>
+    	<h2>学分</h2>
+    	<p>第一学期学分已录入</p>
+    </ion-item> 
+    <ion-item (click)="goWork()">
+    	<ion-thumbnail item-start>
+    		<img src="assets/icon/u=3511558279,2201484779&fm=26&gp=0.jpg">
+    	</ion-thumbnail>
+    	<h2>排班</h2>
+    	<p>急诊夜班通知</p>
+    </ion-item> 
+    <ion-item (click)="goHuTalk()">
+    	<ion-thumbnail item-start>
+    		<img src="assets/icon/timg.jpg">
+    	</ion-thumbnail>
+    	<h2>找组织</h2>
+    	<p>交大一附院</p>
+    </ion-item>             
+  </ion-list>
+</ion-content>

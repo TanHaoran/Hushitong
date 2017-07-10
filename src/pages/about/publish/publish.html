@@ -1,0 +1,68 @@
+<!--
+  Generated template for the Publish page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>发布</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content >
+<ion-card>
+	<ion-list>
+		<ion-item>
+		服务项目<p style="display: inline;">(请选择服务项目)</p>
+		</ion-item>
+		<ion-item>
+			<button ion-button color="primary" outline (click)="addService('美白针')">美白针</button>
+			<button ion-button color="primary" outline (click)="addService('伤口护理')">伤口护理</button>
+			<button ion-button color="primary" outline (click)="addService('褥疮护理')">褥疮护理</button>
+			<button ion-button color="primary" outline (click)="addService('鼻饲')">鼻饲</button>
+		</ion-item>
+		<ion-item>
+			<button ion-button color="primary" outline (click)="addService('打针')">打针</button>
+			<button ion-button color="primary" outline (click)="addService('伤口护理')">伤口护理</button>
+			<button ion-button color="primary" outline (click)="addService('外科伤口换药')">外科伤口换药</button>
+		</ion-item>
+		<ion-item *ngFor="let item of serviceList">
+			<div item-start>{{item.name}}</div><p style="display: inline;" class="price"> {{item.price}}元</p><p item-end>删除</p>
+		</ion-item>
+	</ion-list>
+
+</ion-card>
+<ion-card>
+		<ion-list>
+		<ion-item>服务信息</ion-item>
+		<ion-item>
+					<ion-label>地区</ion-label>
+			<ion-select  cancelText="取消" okText="确定">
+				<ion-option  *ngFor="let item of address"></ion-option>
+			</ion-select>
+		</ion-item>
+		<button ion-item>
+			<ion-label>请选择空闲日</ion-label>
+			<ion-datetime displayFormat="YYYY-MM-DD" max="2017" min="2017" pickerFormat="MMM DD YYYY" ></ion-datetime>
+		</button>
+		<button ion-item >
+			<ion-label>请选择空闲时间(始)</ion-label>
+			<ion-datetime displayFormat="HH:mm" max="2017" pickerFormat="HH mm" ></ion-datetime>
+		</button>
+		<button ion-item >
+			<ion-label>请选择空闲时间(止)</ion-label>
+			<ion-datetime displayFormat="HH:mm" max="2017" pickerFormat="HH mm" ></ion-datetime>
+		</button>
+	</ion-list>
+</ion-card>
+</ion-content>
+<ion-footer>
+	<ion-item>
+		<p>为保证用户下单，建议按照指导价报价</p>
+	</ion-item>
+	<button ion-button full >立即发布</button>
+</ion-footer>

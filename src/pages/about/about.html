@@ -1,0 +1,65 @@
+<ion-header   >
+	<ion-navbar hideBackButton="true" >
+		<ion-item  no-lines>
+			<ion-thumbnail item-left >
+				<img src="assets/icon/2017-05-13 212002.jpg">
+			</ion-thumbnail>
+<!-- 			<ion-buttons end >
+				<button ion-button icon-only >
+					<ion-icon name="cog" color="gray"></ion-icon>
+				</button>
+			</ion-buttons> -->
+			<h2 >小护士</h2>
+			<p>西安交通大学第一附属医院</p>
+			<p >总学分：<span>12</span> |   总积分：<span>90</span> </p>
+		</ion-item>
+	</ion-navbar>
+</ion-header>
+
+<ion-content >
+	<ion-list>
+		<ion-item>
+			<ion-grid>
+				<ion-row>
+					<ion-col col-4 (click)="goMySkill()">
+					<div style="height:40px;position: relative;">
+							<img src="assets/icon/event_hlqtwt.png" style="width: 35px;margin: auto;position: absolute; 
+							top: 0; bottom: 0;left: 0;right: 0">
+						</div>
+						<div style="text-align: center;">我的技能</div>
+					</ion-col>
+					<ion-col col-4 (click)="goMyCertificate()">
+					<div style="height:40px;position: relative;">
+							<img src="assets/icon/event_hlqtwt.png" style="width: 35px;margin: auto;position: absolute; 
+							top: 0; bottom: 0;left: 0;right: 0">
+						</div>
+						<div style="text-align: center;">我的认证</div>
+					</ion-col>
+					<ion-col col-4 (click)="goAlertPage()">
+					<div style="height:40px;position: relative;">
+							<img src="assets/icon/event_hlqtwt.png" style="width: 35px;margin: auto;position: absolute; 
+							top: 0; bottom: 0;left: 0;right: 0">
+						</div>
+						<div style="text-align: center;">我的简历</div>
+					</ion-col>            
+				</ion-row>
+			</ion-grid>
+		</ion-item>
+		
+		
+	</ion-list>
+	<ion-list>
+		<button ion-item (click)="goMyDetail()">
+			<ion-icon name="create" item-left color="gray" ></ion-icon>
+			个人资料
+		</button>
+		<button ion-item (click)="goMyBill()">
+			<ion-icon name="bookmark" item-left color="gray" ></ion-icon>
+			收入账单
+		</button>
+		<button ion-item (click)="goSetUp()">
+			<ion-icon name="time" item-left color="gray"></ion-icon>
+			设置
+		</button>		
+	</ion-list>
+</ion-content>

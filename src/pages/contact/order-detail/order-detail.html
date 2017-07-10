@@ -1,0 +1,54 @@
+<!--
+  Generated template for the OrderDetail page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>任务详情</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content >
+<ion-list>
+	<ion-item>
+		<div>订单状态：<span>未接单</span></div>
+	</ion-item>
+	<ion-item>
+		<div>订单编号：JP2017062915645</div>
+	</ion-item>
+</ion-list>
+
+<ion-list>
+	<ion-item>
+		<ion-thumbnail item-start>
+			<img src="assets/icon/老人陪诊.png">
+		</ion-thumbnail>
+		外科伤口护理
+		<p item-end style="font-size: 20px;color: #f53d3d">399元</p>
+	</ion-item>
+	<ion-item>
+		<div item-start>服务时间</div>
+		<div item-end>20分钟</div>
+	</ion-item>
+</ion-list>
+
+<ion-list>
+	<ion-item>
+		<div>联系人：熊咪</div>
+		<div>电话：18011111111</div>
+	</ion-item>
+	<ion-item>
+		<p>预约时间：2017-06-30   14:00:00</p> 
+		<p>预约地址：沣惠南路1111号</p>
+	</ion-item>
+</ion-list>
+</ion-content>
+
+<ion-footer>
+<button ion-button full (click)="goTakeOrderSuccess()">立即抢单</button>
+</ion-footer>

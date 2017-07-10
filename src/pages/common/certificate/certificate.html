@@ -1,0 +1,52 @@
+<!--
+  Generated template for the Certificate page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>护士认证</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+	<ion-list>
+		<ion-label>实名认证</ion-label>
+		<button ion-item (click)="changeInput('姓名','realName')" >
+			<ion-label>姓名</ion-label>
+			<ion-label color="gray">{{details.realName}}</ion-label>
+		</button>
+		<button ion-item (click)="changeInput('身份证号','id')"  >
+			<ion-label>身份证号</ion-label>
+			<ion-label color="gray" style="overflow: visible">{{details.id}}</ion-label>
+		</button>
+
+		<ion-label>职业认证</ion-label>
+		<div >
+		<button ion-item (click)="changeInput('执业证名称','CertificateName')" >
+			<ion-label>执业证名称</ion-label>
+			<ion-label color="gray" style="overflow: visible">{{details.CertificateName}}</ion-label>
+		</button>
+		<button ion-item (click)="changeInput('执业证编号','careerid')" >
+			<ion-label>执业证编号</ion-label>
+			<ion-label color="gray" style="overflow: visible">{{details.careerid}}</ion-label>
+		</button>		
+		<button ion-item (click)="changeInput('有效期至','careerDate')">
+			<ion-label>有效期至</ion-label>
+			<ion-datetime displayFormat="YYYY-MM-DD" max="2027" pickerFormat="MMM DD YYYY" [(ngModel)]="details.careerDate"></ion-datetime>
+		</button>
+		<image-upload
+			[max]="100"
+			[url]="uploadurl"
+			[buttonCaption]="'上传图片'"
+			[dropBoxMessage]="'请选择执业证图片'"
+			(onFileUploadFinish)="imageUploaded($event)" ></image-upload>
+		</div>
+
+	</ion-list>	
+	<button ion-button full (click)="goMyorder()">确认</button>
+</ion-content>

@@ -1,0 +1,40 @@
+<ion-header>
+	<ion-navbar   hideBackButton="true">
+<!--   <ion-navbar  color="secondary"> -->
+		<ion-title>登录</ion-title>
+	</ion-navbar>
+</ion-header>
+
+<ion-content>
+<ion-list>
+
+  <ion-item>
+    <ion-label fixed>手机号</ion-label>
+    <ion-input type="text" value="" [(ngModel)]="formData.Name" clearInput="true"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label fixed>密码</ion-label>
+    <ion-input type="password" [(ngModel)]="formData.Pwd" clearInput="true"></ion-input>
+  </ion-item>
+  <ion-item>
+    <p *ngIf="ifShowMsg === true" color="danger">{{msg}}</p>
+  </ion-item>
+
+</ion-list>
+
+ <div padding>
+    <button ion-button block class="normalBtn" (click)="popPage()">登录</button>
+</div>
+<!-- <div padding style="text-align: center">
+  <a (click)="goForgetPwd()" color="secondary">忘记密码</a>
+</div>
+
+<div padding style="text-align: center">
+  <a (click)="goRegister()" color="secondary">注册</a>
+</div> -->
+<!-- <div padding style="text-align: center">
+  <a (click)="goRegister()" color="secondary">社交账号登录</a>
+</div> -->
+
+</ion-content>
