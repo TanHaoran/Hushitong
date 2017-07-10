@@ -3,7 +3,7 @@ import {  NavController, NavParams,ToastController,AlertController } from 'ionic
 
 import * as interfaceConfig from '../../../appConfig/interfaceConfig';
 
-import { Myorder } from '../../../pages/contact/myorder/myorder';
+import { Myorder } from '../../../pages/hospital/order/myorder/myorder';
 
 /**
  * Generated class for the Certificate page.

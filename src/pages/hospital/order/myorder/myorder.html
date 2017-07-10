@@ -1,0 +1,140 @@
+<!--
+  Generated template for the Myorder page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>我的订单</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content >
+	<ion-segment [(ngModel)]="dws">
+		<ion-segment-button value="all">
+			全部订单
+		</ion-segment-button>
+		<ion-segment-button value="unfinish">
+			未完成
+		</ion-segment-button>
+	</ion-segment>
+	<div [ngSwitch]="dws" class="contentdiv">
+		<ion-list *ngSwitchCase="'all'">
+			<ion-card (click)="goTakeOrderSuccess()">
+				<ion-card-content>
+					<ion-item>
+						<ion-thumbnail item-start>
+							<img src="assets/icon/老人陪诊.png">
+						</ion-thumbnail>
+						<p item-end>$399</p>
+						陪诊
+						<p>西安交通大学第一附属医院</p>		
+						<p>2017-06-15</p>
+					</ion-item>
+					<ion-item>
+						<button ion-button item-end class="smallBtn" style="display: inline-block;right: 0px;">
+						确认完成
+						</button>
+					</ion-item>
+				</ion-card-content>
+			</ion-card>
+			<ion-card>
+				<ion-card-content>
+					<ion-item>
+						<ion-thumbnail item-start>
+							<img src="assets/icon/老人陪诊.png">
+						</ion-thumbnail>
+						<p item-end>$399</p>
+						上门打针
+						<p>西安交通大学第一附属医院</p>		
+						<p>2017-06-15</p>
+					</ion-item>
+					<ion-item>
+						<button ion-button item-end class="smallBtn" style="display: inline-block;right: 0px;">
+						去评价
+						</button>
+					</ion-item>
+				</ion-card-content>
+			</ion-card>
+			<ion-card>
+				<ion-card-content>
+					<ion-item>
+						<ion-thumbnail item-start>
+							<img src="assets/icon/老人陪诊.png">
+						</ion-thumbnail>
+						<p item-end>$399</p>
+						按摩
+						<p>西安交通大学第一附属医院</p>		
+						<p>2017-06-15</p>
+					</ion-item>
+					<ion-item>
+						<button ion-button item-end class="smallBtn" style="display: inline-block;right: 0px;">
+						去评价
+						</button>
+					</ion-item>
+				</ion-card-content>
+			</ion-card>
+			<ion-card>
+				<ion-card-content>
+					<ion-item>
+						<ion-thumbnail item-start>
+							<img src="assets/icon/老人陪诊.png">
+						</ion-thumbnail>
+						<p item-end>$399</p>
+						送药
+						<p>西安交通大学第一附属医院</p>		
+						<p>2017-06-15</p>
+					</ion-item>
+					<ion-item>
+						<span item-end class="smallBtn" style="display: inline-block;right: 0px;">
+						已评价
+						</span>
+					</ion-item>
+				</ion-card-content>
+			</ion-card>			
+		</ion-list>
+
+		<ion-list *ngSwitchCase="'unfinish'">
+			<ion-card (click)="goTakeOrderSuccess()">
+				<ion-card-content>
+					<ion-item>
+						<ion-thumbnail item-start>
+							<img src="assets/icon/老人陪诊.png">
+						</ion-thumbnail>
+						<p item-end>$399</p>
+						上门打针
+						<p>西安交通大学第一附属医院</p>		
+						<p>2017-06-15</p>
+					</ion-item>
+					<ion-item>
+						<button ion-button item-end class="smallBtn" style="display: inline-block;right: 0px;">
+						去评价
+						</button>
+					</ion-item>
+				</ion-card-content>
+			</ion-card>
+			<ion-card>
+				<ion-card-content>
+					<ion-item>
+						<ion-thumbnail item-start>
+							<img src="assets/icon/老人陪诊.png">
+						</ion-thumbnail>
+						<p item-end>$399</p>
+						按摩
+						<p>西安交通大学第一附属医院</p>		
+						<p>2017-06-15</p>
+					</ion-item>
+					<ion-item>
+						<button ion-button item-end class="smallBtn" style="display: inline-block;right: 0px;">
+						去评价
+						</button>
+					</ion-item>
+				</ion-card-content>
+			</ion-card>
+		</ion-list>
+	</div>
+</ion-content>

@@ -4,7 +4,7 @@ import {  NavController, NavParams } from 'ionic-angular';
 import { Exam } from '../hospital/exam/exam';
 import { Score } from '../hospital/score/score';
 import { Work } from '../hospital/work/work';
-import { HuTalk } from '../hospital/hu-talk/hu-talk';
+import { Order } from '../hospital/order/order';
 
 /**
  * Generated class for the Hospital page.
@@ -38,7 +38,7 @@ export class Hospital {
   	this.navCtrl.push(Work);
   }
 
-  goHuTalk(){
-  	this.navCtrl.push(HuTalk);
+  goOrder(){
+  this.navCtrl.push(Order);
   }
 }

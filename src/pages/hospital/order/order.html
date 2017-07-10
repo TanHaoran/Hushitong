@@ -1,0 +1,120 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      接单
+    </ion-title>
+      <ion-buttons end >
+      <button ion-button (click)="goPublish()">
+              发布
+        </button>
+        <button ion-button (click)="goMyOrder()">
+              我的订单
+        </button>
+      </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+<!--   <ion-grid>
+    <ion-row>
+      <ion-col col-4 (click)="goTakeOrder()">
+        <div style="height:60px;background: #eee;position: relative;">
+          <img src="assets/icon/event_hlqtwt.png" style="width: 35px;margin: auto;position: absolute; 
+          top: 0; bottom: 0;left: 0;right: 0">
+        </div>
+        <div style="text-align: center;">抢单</div>
+      </ion-col>
+      <ion-col col-4 (click)="goMyBill()">
+        <div style="height:60px;background: #eee;position: relative;">
+          <img src="assets/icon/event_hlqtwt.png" style="width: 35px;margin: auto;position: absolute; 
+          top: 0; bottom: 0;left: 0;right: 0">
+        </div>
+        <div style="text-align: center;">收入账单</div>
+      </ion-col>
+      <ion-col col-4 (click)="goAlertPage()">
+        <div style="height:60px;background: #eee;position: relative;">
+          <img src="assets/icon/event_hlqtwt.png" style="width: 35px;margin: auto;position: absolute; 
+          top: 0; bottom: 0;left: 0;right: 0">
+        </div>
+        <div style="text-align: center;">订单</div>
+      </ion-col>            
+    </ion-row>
+  </ion-grid> -->
+  <ion-list>
+    <ion-item style="border-left: 3px solid #488aff">
+      <span item-start style="color: #488aff;">
+        公告
+      </span>
+      <ion-slides #noticeSlide  autoplay=1 loop="true" speed=3000 direction="vertical" style="height: 30px;width: 80%;text-align: left;">
+
+        <ion-slide>
+          <p>王护士接单成功 <span style="float: right;">2小时前</span></p>
+        </ion-slide>
+
+        <ion-slide>
+          <p>喵护士完成了服务<span style="float: right;">1小时前</span></p>
+        </ion-slide>
+
+        <ion-slide>
+          <p>赵护士得到了好评<span style="float: right;">5小时前</span></p>
+        </ion-slide>
+
+      </ion-slides>
+     
+   </ion-item>
+  </ion-list>
+  <ion-card>
+    <ion-card-content>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/icon/老人陪诊.png">
+        </ion-thumbnail>
+        陪诊
+        <p>地址：西安交通大学第一附属医院</p>    
+        <p>时间：2017-06-15</p>
+      </ion-item>
+      <ion-item>
+        <p item-start style="font-size: 20px;color: #f53d3d">399元</p>
+        <button ion-button item-end class="smallBtn" style="display: inline-block;right: 0px;" (click)="goOrderDetail()">
+        抢单
+        </button>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-content>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/icon/老人陪诊.png">
+        </ion-thumbnail>
+        打针
+        <p>地址：西安市沣惠南路</p>   
+        <p>时间：2017-06-15</p>
+      </ion-item>
+      <ion-item>
+        <p item-start style="font-size: 20px;color: #999">500元</p>
+        <p  item-end class="smallBtn" style="display: inline-block;right: 0px;">
+        已被抢
+        </p>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-content>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/icon/老人陪诊.png">
+        </ion-thumbnail>
+        陪诊
+        <p>地址：西安交通大学第一附属医院</p>    
+        <p>时间：2017-06-15</p>
+      </ion-item>
+      <ion-item>
+        <p item-start style="font-size: 20px;color: #f53d3d">200元</p>
+        <button ion-button item-end class="smallBtn" style="display: inline-block;right: 0px;">
+        抢单
+        </button>
+      </ion-item>
+    </ion-card-content>
+  </ion-card> 
+</ion-content>
