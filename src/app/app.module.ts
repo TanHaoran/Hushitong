@@ -1,6 +1,7 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { IonicApp, IonicModule, IonicErrorHandler, IonicPageModule } from 'ionic-angular';
+import { IonicApp, IonicModule, IonicErrorHandler} from 'ionic-angular';
+// import { IonicApp, IonicModule, IonicErrorHandler, IonicPageModule } from 'ionic-angular';
 import {HttpModule, JsonpModule} from '@angular/http';
 import { MyApp } from './app.component';
 import { IonicStorageModule } from '@ionic/storage';
@@ -22,16 +23,16 @@ import { Certificate } from '../pages/common/certificate/certificate';
 import { Exam } from '../pages/hospital/exam/exam';
 import { ExamAppointment } from '../pages/hospital/exam/exam-appointment/exam-appointment';
 import { ExamDetail } from '../pages/hospital/exam/exam-appointment/exam-detail/exam-detail';
-import { HuTalk } from '../pages/hospital/hu-talk/hu-talk';
-import { Chat } from '../pages/hospital/hu-talk/chat/chat';
+import { Chat } from '../pages/contact/chat/chat';
 import { Score } from '../pages/hospital/score/score';
 import { Scoredetail } from '../pages/hospital/score/scoredetail/scoredetail';
 import { Work } from '../pages/hospital/work/work';
 import { AlertPage } from '../pages/common/alert-page/alert-page';
-import { Myorder } from '../pages/contact/myorder/myorder';
-import { TakeOrder } from '../pages/contact/take-order/take-order';
-import { TakeorderSuccess } from '../pages/contact/takeorder-success/takeorder-success';
-import { OrderDetail } from '../pages/contact/order-detail/order-detail';
+import { Order } from '../pages/hospital/order/order';
+import { Myorder } from '../pages/hospital/order/myorder/myorder';
+import { TakeOrder } from '../pages/hospital/order/take-order/take-order';
+import { TakeorderSuccess } from '../pages/hospital/order/takeorder-success/takeorder-success';
+import { OrderDetail } from '../pages/hospital/order/order-detail/order-detail';
 import { MyBill } from '../pages/about/my-bill/my-bill';
 import { MyDetailPagePage } from '../pages/about/my-detail-page/my-detail-page';
 import { Publish } from '../pages/about/publish/publish';
@@ -78,12 +79,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     Exam,
     ExamAppointment,
     ExamDetail,
-    HuTalk,
     Chat,
     Score,
     Scoredetail,
     Work,
     AlertPage,
+    Order,
     Myorder,
     TakeOrder,
     TakeorderSuccess,
@@ -129,12 +130,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     Exam,
     ExamAppointment,
     ExamDetail,
-    HuTalk,
     Chat,
     Score,
     Scoredetail,
     Work,
     AlertPage,
+    Order,
     Myorder,
     TakeOrder,
     TakeorderSuccess,
@@ -155,7 +156,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     CommonCheck,
     HomeService,
     ImageUploadModule,
-    ChatService, 
+    ChatService,
     ChatMessage,
     EmojiProvider,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
