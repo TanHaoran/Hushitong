@@ -9,7 +9,7 @@
 
 <ion-content>
   <ion-list>
-    <ion-item>
+    <ion-item (click)="changeImg()">
       <ion-label>头像</ion-label>
       <ion-avatar item-right>
         <img [src]="details.imgUrl">
@@ -38,13 +38,13 @@
               (isPending)="disableSendButton($event)"
               ></image-upload> -->
   <ion-list>
-    <button ion-item>
-      <ion-label>姓名</ion-label>
-      <ion-label color="gray"></ion-label>
+    <button ion-item (click)="goNickname()">
+      <ion-label>昵称</ion-label>
+      <ion-label></ion-label>
     </button>
     <button ion-item>
       <ion-label>手机</ion-label>
-      <ion-label color="gray"></ion-label>
+      <ion-label></ion-label>
     </button>
     <ion-item>
       <ion-label>性别</ion-label>

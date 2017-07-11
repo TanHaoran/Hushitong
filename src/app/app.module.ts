@@ -61,6 +61,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import {MyGroupPage} from "../pages/contact/my-group/my-group";
 import {MyOrganizationPage} from "../pages/contact/my-organization/my-organization";
+import {FeedBackPage} from "../pages/about/feed-back/feed-back";
+import {NicknamePage} from "../pages/about/my-detail-page/nickname/nickname";
 
 @NgModule({
   declarations: [
@@ -98,9 +100,11 @@ import {MyOrganizationPage} from "../pages/contact/my-organization/my-organizati
     Setup,
     Welcome,
     RelativeTime,
+    FeedBackPage,
     ContactorlistComponent,
     MyGroupPage,
-    MyOrganizationPage
+    MyOrganizationPage,
+    NicknamePage
   ],
   imports: [
     BrowserModule,
@@ -150,9 +154,11 @@ import {MyOrganizationPage} from "../pages/contact/my-organization/my-organizati
     Notice,
     Setup,
     Welcome,
+    FeedBackPage,
     ContactorlistComponent,
     MyGroupPage,
-    MyOrganizationPage
+    MyOrganizationPage,
+    NicknamePage
   ],
   providers: [
     StatusBar,

@@ -7,64 +7,64 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>实名认证</ion-title>
+    <ion-title>开始认证</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content>
-<ion-list>
+  <ion-list>
 
-	<ion-item>
-	<ion-icon name="contact" item-left color="gray"></ion-icon>
-		<ion-input type="text" placeholder="请输入姓名"></ion-input>
-	</ion-item>
+    <ion-item>
+      <ion-icon name="contact" item-left color="gray"></ion-icon>
+      <ion-input type="text" placeholder="请输入姓名"></ion-input>
+    </ion-item>
 
-	<ion-item>
-		<ion-icon name="card" item-left color="gray"></ion-icon>
-		<ion-input type="text" placeholder="请输入身份证号"></ion-input>
-	</ion-item>
+    <ion-item>
+      <ion-icon name="card" item-left color="gray"></ion-icon>
+      <ion-input type="text" placeholder="请输入身份证号"></ion-input>
+    </ion-item>
 
 
-</ion-list>
-<ion-list>
-		<ion-item no-lines>
-				<p>①请上传手持身份证照片</p>
-	</ion-item>
-	<ion-item no-lines>
-		<img src="assets/icon/2017-07-03 164344.jpg">
-	</ion-item>
-	<ion-item no-lines>
-		
-				<image-upload
-			[max]="100"
-			[url]="uploadurl"
-			[buttonCaption]="'上传图片'"
-			[dropBoxMessage]="'请选择图片'"
-			(onFileUploadFinish)="imageUploaded($event)" ></image-upload>
-	</ion-item>
-	<ion-item no-lines>
-				<p>②身份证正面</p>
-	</ion-item>
-	<ion-item no-lines>
-	<img src="assets/icon/2017-07-03 164351.jpg">
-	</ion-item>	
-	<ion-item no-lines>
-		
-				<image-upload
-			[max]="100"
-			[url]="uploadurl"
-			[buttonCaption]="'上传图片'"
-			[dropBoxMessage]="'请选择图片'"
-			(onFileUploadFinish)="imageUploaded($event)" ></image-upload>
-	</ion-item>	
-	<ion-item no-lines>
-		<p>拍摄时确保身份证边框完整，字体清晰，亮度均匀</p>
-	</ion-item>
-</ion-list>
+  </ion-list>
+  <ion-list>
+    <ion-item no-lines>
+      <p>①请上传手持身份证照片</p>
+    </ion-item>
+    <ion-item no-lines>
+      <img src="assets/icon/2017-07-03 164344.jpg">
+    </ion-item>
+    <ion-item no-lines>
+
+      <image-upload
+        [max]="100"
+        [url]="uploadurl"
+        [buttonCaption]="'上传图片'"
+        [dropBoxMessage]="'请选择图片'"
+        (onFileUploadFinish)="imageUploaded($event)"></image-upload>
+    </ion-item>
+    <ion-item no-lines>
+      <p>②护士资格证</p>
+    </ion-item>
+    <ion-item no-lines>
+      <img src="assets/icon/2017-07-03 164351.jpg">
+    </ion-item>
+    <ion-item no-lines>
+
+      <image-upload
+        [max]="100"
+        [url]="uploadurl"
+        [buttonCaption]="'上传图片'"
+        [dropBoxMessage]="'请选择图片'"
+        (onFileUploadFinish)="imageUploaded($event)"></image-upload>
+    </ion-item>
+    <ion-item no-lines>
+      <p>拍摄时确保身份证边框完整，字体清晰，亮度均匀</p>
+    </ion-item>
+  </ion-list>
 </ion-content>
 
 <ion-footer>
-<button ion-button full>提交</button>
+  <button ion-button full>提交</button>
 </ion-footer>
