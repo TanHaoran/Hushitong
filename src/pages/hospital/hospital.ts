@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
-import {  NavController, NavParams } from 'ionic-angular';
+import {  NavController, NavParams ,App} from 'ionic-angular';
 
 import { Exam } from '../hospital/exam/exam';
 import { Score } from '../hospital/score/score';
 import { Work } from '../hospital/work/work';
 import { Order } from '../hospital/order/order';
+import {Blsj} from "../jumpPages/blsj/blsj";
+import {NurseClass} from "../jumpPages/nurse-class/nurse-class";
 
 /**
  * Generated class for the Hospital page.
@@ -19,7 +21,7 @@ import { Order } from '../hospital/order/order';
 })
 export class Hospital {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,private app:App) {
   }
 
   ionViewDidLoad() {
@@ -40,5 +42,11 @@ export class Hospital {
 
   goOrder(){
   this.navCtrl.push(Order);
+  }
+  goBlsj(){
+    this.app.getRootNav().push(Blsj);
+  }
+  goNurseClass(){
+    this.app.getRootNav().push(NurseClass);
   }
 }
