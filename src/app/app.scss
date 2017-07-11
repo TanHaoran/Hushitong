@@ -7,7 +7,8 @@ a {
 }
 ion-navbar .toolbar-background{
 	background : color($colors, primary) !important;
-	
+
+
 }
 ion-navbar .toolbar-title{
 	color: #fff !important;
@@ -41,7 +42,7 @@ ion-navbar .toolbar-title{
 	}
 	.ionSpinner {
 		display: block !important;
-		margin: 0 auto !important;		
+		margin: 0 auto !important;
 	}
 	.redspot {
 		height: 10px;
@@ -176,7 +177,7 @@ ion-navbar .toolbar-title{
   display: block;
   background: no-repeat url('../assets/icon/bar_service.png') center;
   background-size: 25px 25px;
-}	
+}
 //
 .ion-ios-Hospital{
   content: '';

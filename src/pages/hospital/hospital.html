@@ -15,6 +15,23 @@
 
 <ion-content >
   <ion-list>
+    <ion-item (click)='goBlsj()'>
+      <ion-thumbnail item-start>
+        <img src="assets/icon/icon_blsj.png">
+      </ion-thumbnail>
+      <h2>不良事件</h2>
+      <p>1个未通过审核</p>
+      <!--       <ion-badge item-end color="danger">2</ion-badge> -->
+      <span item-end style="font-size: 10px;color:#999">6月23日</span>
+    </ion-item>
+    <ion-item (click)='goNurseClass()'>
+      <ion-thumbnail item-start>
+        <img src="assets/icon/icon_hsxt.png">
+      </ion-thumbnail>
+      <h2>护士学堂</h2>
+      <p>你学习的一个课程获得了学分</p>
+      <span item-end style="font-size: 10px;color:#999">6月23日</span>
+    </ion-item>
     <ion-item (click)="goExam()">
       <ion-thumbnail item-start>
         <img src="assets/icon/kaoshi.jpg">
@@ -29,20 +46,20 @@
     	</ion-thumbnail>
     	<h2>学分</h2>
     	<p>第一学期学分已录入</p>
-    </ion-item> 
+    </ion-item>
     <ion-item (click)="goWork()">
     	<ion-thumbnail item-start>
     		<img src="assets/icon/u=3511558279,2201484779&fm=26&gp=0.jpg">
     	</ion-thumbnail>
     	<h2>排班</h2>
     	<p>急诊夜班通知</p>
-    </ion-item> 
+    </ion-item>
     <ion-item (click)="goOrder()">
       <ion-thumbnail item-start>
         <img src="assets/icon/timg.jpg">
       </ion-thumbnail>
       <h2>接单</h2>
       <p>接单啦</p>
-    </ion-item>                
+    </ion-item>
   </ion-list>
 </ion-content>
