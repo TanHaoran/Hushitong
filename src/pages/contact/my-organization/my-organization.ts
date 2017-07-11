@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {NurseTeamPage} from "./nurse-team/nurse-team";
 
 /**
  * Generated class for the MyOrganizationPage page.
@@ -22,7 +21,7 @@ export class MyOrganizationPage {
   }
 
   goNurseTeam(){
-    this.navCtrl.push(NurseTeamPage);
+   // this.navCtrl.push(NurseTeamPage);
   }
 
 }

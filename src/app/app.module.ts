@@ -59,6 +59,8 @@ import { EmojiProvider } from '../providers/chat/emoji';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import {MyGroupPage} from "../pages/contact/my-group/my-group";
+import {MyOrganizationPage} from "../pages/contact/my-organization/my-organization";
 
 @NgModule({
   declarations: [
@@ -96,7 +98,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     Setup,
     Welcome,
     RelativeTime,
-    ContactorlistComponent
+    ContactorlistComponent,
+    MyGroupPage,
+    MyOrganizationPage
   ],
   imports: [
     BrowserModule,
@@ -146,7 +150,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     Notice,
     Setup,
     Welcome,
-    ContactorlistComponent
+    ContactorlistComponent,
+    MyGroupPage,
+    MyOrganizationPage
   ],
   providers: [
     StatusBar,
