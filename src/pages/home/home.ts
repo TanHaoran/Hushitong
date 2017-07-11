@@ -31,9 +31,8 @@ export class HomePage {
     this.mainSlides.autoplay = 1;
     // this.mainSlides.startAutoplay();
     // this.mainSlides.slideTo(2, 500);
-    var that = this;
-    setInterval(function () {
-      that.mainSlides.slideNext(500);
+    setInterval(() => {
+      this.mainSlides.slideNext(500);
     }, 5500);
 
     this.noticeSlides.startAutoplay();
