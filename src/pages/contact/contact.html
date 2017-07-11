@@ -8,5 +8,15 @@
 
 
 <ion-content >
+  <ion-list>
+    <button ion-item (click)="goMyGroup()">
+      <ion-icon name="md-contacts" item-left></ion-icon>
+      我加入的群
+    </button>
+    <button ion-item (click)="goMyOrganization()">
+      <ion-icon name="md-contacts" item-left></ion-icon>
+      医院护士组织架构
+    </button>
+  </ion-list>
 <contactorlist-component></contactorlist-component>
 </ion-content>

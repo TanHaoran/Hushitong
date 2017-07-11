@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-
+import { MyGroupPage } from './my-group/my-group';
+import { MyOrganizationPage } from './my-organization/my-organization';
 // import { Login } from '../../pages/common/login/login';
 // import { AlertPage } from '../../pages/common/alert-page/alert-page';
 // import { TakeOrder } from './take-order/take-order';
@@ -20,7 +21,13 @@ export class ContactPage {
   constructor(public navCtrl: NavController) {
   	// this.navCtrl.push(Login);
   }
+     goMyGroup(){
+      this.navCtrl.push(MyGroupPage);
+     }
 
+  goMyOrganization(){
+    this.navCtrl.push(MyOrganizationPage);
+  }
   // goAlertPage(){
   // 	this.navCtrl.push(AlertPage);
   // }
