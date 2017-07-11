@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 import {NavController,App} from 'ionic-angular';
 
-import { Chat } from '../../pages/hospital/hu-talk/chat/chat';
+import { Chat } from '../../pages/contact/chat/chat';
 
 /**
  * Generated class for the ContactorlistComponent component.
