@@ -23,10 +23,10 @@ export class MyDetailPagePage {
 		nickName:"昵称",
 		phone:"电话",
 		mail:"mail",
-		headImg:"assets/icon/280.jpg",
+		headImg:"assets/icon/2017-05-13 212002.jpg",
 		position:"",
 		address:"",
-		imgUrl:"assets/icon/280.jpg"
+		imgUrl:"assets/icon/2017-05-13 212002.jpg"
 	};
 	postData:any = {};
 	stateCode:any = {};
@@ -91,20 +91,20 @@ export class MyDetailPagePage {
 	// 	var url = window.URL.createObjectURL(e.target.files[0]);
 	// 	this.details.imgUrl = this.domSanitizer.bypassSecurityTrustResourceUrl(url);
 
-	// 	let fileList: FileList = e.target.files;  
-	// 	if (fileList.length > 0) {  
-	// 		let file: File = fileList[0];  
-	// 		let formData: FormData = new FormData();  
+	// 	let fileList: FileList = e.target.files;
+	// 	if (fileList.length > 0) {
+	// 		let file: File = fileList[0];
+	// 		let formData: FormData = new FormData();
 	// 		formData.append('fileToUpload', file);
 
-	// 		let headers = new Headers()  
-	// 		headers.append('Accept', '*/*');  
-	// 		let options = new RequestOptions({ headers: headers });  
+	// 		let headers = new Headers()
+	// 		headers.append('Accept', '*/*');
+	// 		let options = new RequestOptions({ headers: headers });
 	// 		this.courseService.imgHandler(formData,options).subscribe((data:any) => {
 	// 			this.postData.HeadImg = data.text();
 	// 		});
 
-	// 	} 
+	// 	}
 
 	// }
 
@@ -171,7 +171,7 @@ export class MyDetailPagePage {
 	// 		this.details.hosp = data.HospId;
 	// 		this.details.hospDep = data.DepId;
 	// 		});
-	// }	
+	// }
 
 	// showToast(msg,pos){
 	// 	let toast = this.toastCtrl.create({
@@ -196,7 +196,7 @@ export class MyDetailPagePage {
 	// 		this.showToast('姓名请输入2-10个汉字','middle');
 	// 		return;
 	// 	}
-	
+
 	// 	// if(this.commonCheck.isNull(this.details.phone)){
 	// 	// 	this.showToast('电话号码不能为空','middle');
 	// 	// 	return;
@@ -221,13 +221,13 @@ export class MyDetailPagePage {
 	// 		if(this.postData.HeadImg !== null){
 	// 			this.postData.imgUrl = interfaceConfig.base+ '/FX/'+this.postData.HeadImg;
 	// 		}
-		
+
 	// 		this.localstorage.setItem('userdetail_buzzly_nurse_train',JSON.stringify(this.postData));
 	// 		this.commonService.currentDetails = this.postData;
 	// 	}, err =>{
 	// 		alert('err');
 	// 	});
-	// } 
+	// }
 
 	// goCertificate(){
 	// 	this.navCtrl.push(CertificatePage);

@@ -1,94 +1,94 @@
 <ion-header>
 
-	<ion-navbar>
-		<ion-title>个人资料</ion-title>
-	</ion-navbar>
+  <ion-navbar>
+    <ion-title>个人资料</ion-title>
+  </ion-navbar>
 
 </ion-header>
 
 
 <ion-content>
-	<ion-list>
-		<ion-item>
-			<ion-label>头像</ion-label>
-			<ion-avatar item-right >
-				<img [src]="details.imgUrl">
-				<input type="file" style="height: 36px,width: 36px;position:absolute;right:-30px;bottom:15px;opacity:0;" >
-			</ion-avatar>
-			
-		</ion-item>
-	</ion-list>
+  <ion-list>
+    <ion-item>
+      <ion-label>头像</ion-label>
+      <ion-avatar item-right>
+        <img [src]="details.imgUrl">
+        <input type="file" style="height: 36px;width: 36px;position:absolute;right:-30px;bottom:15px;opacity:0;">
+      </ion-avatar>
 
-	<ion-list>
-		<button ion-item >
-		<ion-icon name="ios-card" item-left color="gray"></ion-icon>
-			实名认证
-		</button>
-	</ion-list>	
-<!-- 			<image-upload
-			[max]="100"
-			[url]="'http://test.buzzlysoft.com/ImgHandler.ashx'"
-			[headers]="[
-			{header: 'Content-Type', value: 'multipart/form-data'}
-			]"
-			[buttonCaption]="'Select Images!'"
-			[dropBoxMessage]="'Drop your images here!'"
-			(onFileUploadFinish)="imageUploaded($event)"
-			(onRemove)="imageRemoved($event)"
-			(isPending)="disableSendButton($event)"
-			></image-upload> -->
-	<ion-list>
-		<button ion-item >
-			<ion-label>姓名</ion-label>
-			<ion-label color="gray">{{details.nickName}}</ion-label>
-		</button>
-		<ion-item>
-		<ion-label>性别</ion-label>
-			<ion-select  cancelText="取消" okText="确定">
-			<ion-option  *ngFor="let item of stateCode.patientSex"></ion-option>
-			</ion-select>
-		</ion-item>
-		<ion-item>
-		<ion-label>地区</ion-label>
-			<ion-select  cancelText="取消" okText="确定">
-				<ion-option  *ngFor="let item of address"></ion-option>
-			</ion-select>
-		</ion-item>		
-		<ion-item>
-		<ion-label>医院</ion-label>
+    </ion-item>
+  </ion-list>
 
-			<ion-select  cancelText="取消" okText="确定">
-				<ion-option value="{{item.HospId}}" *ngFor="let item of hosptials[details.address]" ></ion-option>
-			</ion-select>
-		</ion-item>
-		<ion-item>
-		<ion-label>科室</ion-label>
-			<ion-select  cancelText="取消" okText="确定">
-				<ion-option  *ngFor="let item of hospDep"></ion-option>
-			</ion-select>
-		</ion-item>		
-		<ion-item>
-		<ion-label>职称</ion-label>
-			<ion-select  cancelText="取消" okText="确定">
-				<ion-option ></ion-option>
-			</ion-select>
-		</ion-item>		
+  <!--<ion-list>-->
+    <!--<button ion-item>-->
+      <!--<ion-icon name="ios-card" item-left color="gray"></ion-icon>-->
+      <!--实名认证-->
+    <!--</button>-->
+  <!--</ion-list>-->
+  <!-- 			<image-upload
+              [max]="100"
+              [url]="'http://test.buzzlysoft.com/ImgHandler.ashx'"
+              [headers]="[
+              {header: 'Content-Type', value: 'multipart/form-data'}
+              ]"
+              [buttonCaption]="'Select Images!'"
+              [dropBoxMessage]="'Drop your images here!'"
+              (onFileUploadFinish)="imageUploaded($event)"
+              (onRemove)="imageRemoved($event)"
+              (isPending)="disableSendButton($event)"
+              ></image-upload> -->
+  <ion-list>
+    <button ion-item>
+      <ion-label>姓名</ion-label>
+      <ion-label color="gray">{{details.nickName}}</ion-label>
+    </button>
+    <ion-item>
+      <ion-label>性别</ion-label>
+      <ion-select cancelText="取消" okText="确定">
+        <ion-option *ngFor="let item of stateCode.patientSex"></ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>地区</ion-label>
+      <ion-select cancelText="取消" okText="确定">
+        <ion-option *ngFor="let item of address"></ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>医院</ion-label>
 
-	</ion-list>
-	<ion-list>
-		<button ion-item >
-			<ion-label>手机</ion-label>
-			<ion-label color="gray"></ion-label>
-		</button>
-<!-- 		<button ion-item (click)="changeInput('邮箱','mail')">
-			<ion-label>邮箱</ion-label>
-			<ion-label color="gray">{{details.mail}}</ion-label>
-		</button> -->
+      <ion-select cancelText="取消" okText="确定">
+        <ion-option value="{{item.HospId}}" *ngFor="let item of hosptials[details.address]"></ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>科室</ion-label>
+      <ion-select cancelText="取消" okText="确定">
+        <ion-option *ngFor="let item of hospDep"></ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>职称</ion-label>
+      <ion-select cancelText="取消" okText="确定">
+        <ion-option></ion-option>
+      </ion-select>
+    </ion-item>
 
-	</ion-list>	
-<ion-list>
-  <ion-item  class="logoutbtn" color="primary" style="text-align: center;">
-确认
-  </ion-item>
-</ion-list>	
+  </ion-list>
+  <ion-list>
+    <button ion-item>
+      <ion-label>手机</ion-label>
+      <ion-label color="gray"></ion-label>
+    </button>
+    <!-- 		<button ion-item (click)="changeInput('邮箱','mail')">
+                <ion-label>邮箱</ion-label>
+                <ion-label color="gray">{{details.mail}}</ion-label>
+            </button> -->
+
+  </ion-list>
+  <ion-list>
+    <ion-item class="logoutbtn" color="primary" style="text-align: center;">
+      确认
+    </ion-item>
+  </ion-list>
 </ion-content>
