@@ -29851,10 +29851,6 @@ emoji-picker .emoji-picker .emoji-items .emoji-item {
   margin-bottom: 10px;
 }
 
-page-about ion-navbar .toolbar-background {
-  background: #fff !important;
-}
-
 page-my-bill .billContent {
   width: 80%;
 }
