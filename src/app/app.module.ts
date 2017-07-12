@@ -63,6 +63,7 @@ import {MyGroupPage} from "../pages/contact/my-group/my-group";
 import {MyOrganizationPage} from "../pages/contact/my-organization/my-organization";
 import {FeedBackPage} from "../pages/about/feed-back/feed-back";
 import {NicknamePage} from "../pages/about/my-detail-page/nickname/nickname";
+import {NurseTeamPage} from "../pages/contact/my-organization/nurse-team/nurse-team";
 
 @NgModule({
   declarations: [
@@ -104,7 +105,8 @@ import {NicknamePage} from "../pages/about/my-detail-page/nickname/nickname";
     ContactorlistComponent,
     MyGroupPage,
     MyOrganizationPage,
-    NicknamePage
+    NicknamePage,
+    NurseTeamPage
   ],
   imports: [
     BrowserModule,
@@ -158,7 +160,8 @@ import {NicknamePage} from "../pages/about/my-detail-page/nickname/nickname";
     ContactorlistComponent,
     MyGroupPage,
     MyOrganizationPage,
-    NicknamePage
+    NicknamePage,
+    NurseTeamPage
   ],
   providers: [
     StatusBar,
