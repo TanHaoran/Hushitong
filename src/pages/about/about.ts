@@ -8,6 +8,7 @@ import {MyBill} from './my-bill/my-bill';
 import {MyDetailPagePage} from './my-detail-page/my-detail-page';
 import {FeedBackPage} from "./feed-back/feed-back";
 
+
 @Component({
   selector: 'page-about',
   templateUrl: 'about.html'
