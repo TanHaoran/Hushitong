@@ -1,6 +1,6 @@
 import {NgModule, ErrorHandler} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
-import {IonicApp, IonicModule, IonicErrorHandler} from 'ionic-angular';
+import {IonicApp, IonicModule, IonicErrorHandler, IonicPageModule} from 'ionic-angular';
 // import { IonicApp, IonicModule, IonicErrorHandler, IonicPageModule } from 'ionic-angular';
 import {HttpModule, JsonpModule} from '@angular/http';
 import {MyApp} from './app.component';
@@ -23,7 +23,7 @@ import {Certificate} from '../pages/common/certificate/certificate';
 import {Exam} from '../pages/hospital/exam/exam';
 import {ExamAppointment} from '../pages/hospital/exam/exam-appointment/exam-appointment';
 import {ExamDetail} from '../pages/hospital/exam/exam-appointment/exam-detail/exam-detail';
-import {Chat} from '../pages/contact/chat/chat';
+// import {Chat} from '../pages/contact/chat/chat';
 import {Score} from '../pages/hospital/score/score';
 import {Scoredetail} from '../pages/hospital/score/scoredetail/scoredetail';
 import {Work} from '../pages/hospital/work/work';
@@ -41,7 +41,7 @@ import {Notice} from '../pages/common/notice/notice';
 import {Setup} from '../pages/common/setup/setup';
 import {Welcome} from '../pages/common/welcome/welcome';
 
-import {RelativeTime} from "../pipes/relative-time";
+// import {RelativeTime} from "../pipes/relative-time";
 
 import {Blsj} from '../pages/jumpPages/blsj/blsj';
 import {NurseClass} from '../pages/jumpPages/nurse-class/nurse-class';
@@ -79,7 +79,7 @@ import {SplashScreen} from '@ionic-native/splash-screen';
     Exam,
     ExamAppointment,
     ExamDetail,
-    Chat,
+    // Chat,
     Score,
     Scoredetail,
     Work,
@@ -95,7 +95,7 @@ import {SplashScreen} from '@ionic-native/splash-screen';
     Notice,
     Setup,
     Welcome,
-    RelativeTime,
+    // RelativeTime,
     ContactorlistComponent,
     FeedBackPage
   ],
@@ -107,7 +107,8 @@ import {SplashScreen} from '@ionic-native/splash-screen';
     CalendarModule,
     IonicStorageModule.forRoot(),
     IonicModule.forRoot(MyApp),
-    ImageUploadModule.forRoot()
+    ImageUploadModule.forRoot(),
+    // IonicPageModule.forChild(Chat)
     // IonicPageModule.forChild(Login),
     // IonicPageModule.forChild(HomePage),
     // IonicPageModule.forChild(Welcome)
@@ -131,7 +132,7 @@ import {SplashScreen} from '@ionic-native/splash-screen';
     Exam,
     ExamAppointment,
     ExamDetail,
-    Chat,
+    // Chat,
     Score,
     Scoredetail,
     Work,

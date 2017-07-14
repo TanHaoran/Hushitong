@@ -1,9 +1,14 @@
 import {Component, ViewChild, ChangeDetectorRef} from '@angular/core';
-import {  NavController, NavParams } from 'ionic-angular';
+import {  NavController, NavParams,IonicPage } from 'ionic-angular';
 import { Events, Content, TextInput } from 'ionic-angular';
+
 
 import { ChatService, ChatMessage} from "../../../providers/chat/chat-service";
 
+@IonicPage({
+  name: 'Chat',
+  segment: 'Chat'
+})
 @Component({
   selector: 'page-chat',
   templateUrl: 'chat.html',

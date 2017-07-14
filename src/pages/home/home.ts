@@ -4,7 +4,7 @@ import {NavController, App, Slides} from 'ionic-angular';
 import {Blsj} from '../jumpPages/blsj/blsj';
 import {NurseClass} from '../jumpPages/nurse-class/nurse-class';
 import {Score} from '../hospital/score/score';
-import {Chat} from '../../pages/contact/chat/chat';
+// import {Chat} from '../../pages/contact/chat/chat';
 import {Notice} from '../../pages/common/notice/notice';
 
 @Component({
@@ -60,8 +60,8 @@ export class HomePage {
     this.navCtrl.parent.select(1);
   }
 
-  goChat() {
-    this.app.getRootNav().push(Chat, this.toUser);
+  goChat():void {
+    this.app.getRootNav().push('Chat', this.toUser);
   }
 
   goNotice() {
